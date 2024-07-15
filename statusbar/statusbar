@@ -1,0 +1,11 @@
+#! /bin/bash
+
+while true; do
+    # Define left and right status components
+    right_status="CPU: $(mpstat 1 1 | awk '/Average/ {print 100 - $NF}')% | MEM: $(free | awk '/Mem:/ { printf("%.2f"), $3/$2 * 100 }')%"
+	left_status=" : $(date '+%A, %d.%m.%Y')  : $(date '+%H:%M')"
+
+    # Combine them with a separator
+    xsetroot -name "$left_status ; $right_status"
+    sleep 1
+done
