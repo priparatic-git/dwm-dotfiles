@@ -3,7 +3,7 @@
 feh --bg-scale ~/Images/wp/wp4.jpg
 setxkbmap us,ru -option 'grp:alt_shift_toggle'
 
-bash ~/dwm/statusbar/statusbar &
+dwmblocks &
 
 while true; do
 	# Log stderror to a file
