@@ -1,6 +1,6 @@
 #!/bin/sh
 
-feh --bg-scale ~/Images/wp/wp4.jpg
+# feh --bg-scale ~/Images/wp/wp4.jpg
 setxkbmap us,ru -option 'grp:alt_shift_toggle'
 
 dwmblocks &
