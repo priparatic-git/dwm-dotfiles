@@ -8,9 +8,9 @@ static const Block blocks[] = {
     {" " , "date '+%A, %d.%m.%Y'", 60, 0},
 	{" ", "date '+%H:%M'", 1, 0},
 
-	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	5,		0},
+	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	2,		0},
 
-    {"Cpu:", "mpstat 1 1 | awk '/Average/ {print 100 - $NF}'", 5,  0},
+    {"Cpu:", "mpstat 1 1 | awk '/Average/ {print 100 - $NF}'", 2,  0},
 
 };
 
